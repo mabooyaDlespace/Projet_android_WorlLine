@@ -69,9 +69,9 @@ public class TopQuizActivity extends Activity implements View.OnClickListener {
     }
 
     @Override
-    public void onClick(View view) {
+    public void onClick(View view) {// Question réponses
         int responseIndex = (int) view.getTag();
-        if (responseIndex == mCurrentQuestion.getAnswerIndex()) {
+        if (responseIndex == mCurrentQuestion.getAnswerIndex()) { // Answer Index = id de la bonne réponse
             //Good
             view.setBackgroundColor(Color.GREEN);
             Toast.makeText(this, "Correct", Toast.LENGTH_SHORT).show();
@@ -115,7 +115,7 @@ public class TopQuizActivity extends Activity implements View.OnClickListener {
                         Intent intent = new Intent();
                         intent.putExtra(BUNDLE_EXTRA_SCORE, mScore);
                         setResult(RESULT_OK, intent);
-                        finish();//arrete l'activité courrente et revien à l'activité précédente
+                        finish();//arrete l'activité courrente et revient à l'activité précédente
                     }
                 }).create().show();
     }
