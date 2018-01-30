@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/wlt_main_rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".controller.MainActivity"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/wlt_main_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/login_center_panel_left_margin"
+        android:layout_marginRight="@dimen/login_center_panel_right_margin"
+        android:layout_marginTop="@dimen/login_center_panel_top_margin"
+        android:background="@drawable/blue_round_corners_background"
+        android:padding="@dimen/login_center_panel_padding">
+
+        <EditText
+            android:id="@+id/wlt_main_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/login_center_panel_content_top_margin"
+
+            android:hint="@string/loginHint"
+            android:inputType="text"
+            android:background="@drawable/blue_white_text_selector"
+
+            />
+
+
+
+          <EditText
+              android:id="@+id/wlt_main_password"
+              android:layout_below="@+id/wlt_main_login"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/login_center_panel_content_top_margin"
+
+              android:hint="@string/passwordHint"
+              android:inputType="textPassword"
+              android:background="@drawable/blue_white_text_selector"
+
+
+
+
+                      />
+                  <Button
+                      android:id="@+id/wlt_main_buttonSignIn"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@+id/wlt_main_password"
+                      android:layout_alignRight="@+id/wlt_main_password"
+                      android:layout_marginTop="@dimen/login_center_panel_content_top_margin"
+
+
+                      android:text="@string/login"
+                      android:textColor="@color/blue_twitter"
+                      android:background="@drawable/white_blue_round_corners_selector"
+
+                      />
+        <!--  -->
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/twitter"
+
+
+        />
+</RelativeLayout>
