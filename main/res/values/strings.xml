@@ -8,6 +8,7 @@
     <string name="action_logout">Logout</string>
 
     <!-- LOGIN -->
+    <string name="login_welcome_text">Welcome</string>
     <string name="loginHint">Your Twitter login</string>
     <string name="passwordHint">Your Twitter password</string>
     <string name="login">Sign in</string>
